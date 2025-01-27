@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Tabs</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        .resume-title {
+            color: #fff;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-tabs .nav-link {
+            height: 100px;
+            width: 250px;
+            color: #ddd;
+            background-color: #333;
+            border: none;
+            margin:0px;
+            border-radius: 5px;
+            text-align: center;
+        
+        }
+        .nav-tabs .nav-link.active {
+            color: #fff;
+            background-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="resume-title">My Resume</h2>
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="true">Education</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Professional Skills</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="feature1-tab" data-toggle="tab" href="#feature1" role="tab" aria-controls="feature1" aria-selected="false">Standard Feature</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="feature2-tab" data-toggle="tab" href="#feature2" role="tab" aria-controls="feature2" aria-selected="false">Standard Feature</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-5" id="myTabContent">
+            <div class="tab-pane fade show active" id="education" role="tabpanel" aria-labelledby="education-tab">Education Content</div>
+            <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">Professional Skills Content</div>
+            <div class="tab-pane fade" id="feature1" role="tabpanel" aria-labelledby="feature1-tab">Standard Feature Content 1</div>
+            <div class="tab-pane fade" id="feature2" role="tabpanel" aria-labelledby="feature2-tab">Standard Feature Content 2</div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
